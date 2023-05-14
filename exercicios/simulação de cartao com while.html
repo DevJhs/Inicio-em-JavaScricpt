@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação com cartao com correção</title>
+</head>
+<body>
+  <script>
+
+        var senha=1234,tenta=2;
+        let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "));
+      
+        if(tenSh===senha){
+            alert("COMPRA APROVADA");
+             
+        }
+        while(tenSh!=senha){
+
+             alert("VOCE TEM "+tenta-- +" TENTATIVAS");
+        let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "));
+
+            if(tenSh===senha){
+                alert("COMPRA APROVADA");               
+                break
+
+            }else if(tenta==0){ 
+                 alert("CARTÃO BLOQUEADO");
+                 break
+
+            }else{
+                alert("TENTE NOVAMENTE");
+            }
+
+        };
+        
+
+  </script>   
+</body>
+</html>

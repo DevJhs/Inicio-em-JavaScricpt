@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Js</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        p{
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body onload="load()">
+    <button type="button" onclick="botao()">Clique Me!!</button>
+    
+    <h3 id="agra" onclick="redi()"></h3>
+ <!--  colocar (this) na funçao ira te possibilitar a fazer as mesma funçoes em varios elementos -->
+    <p id="troca" onmouseover="troca(this)" onmouseout="destroca(this)">passe o mouse</p> <br> <br>
+    <p id="troca" onmouseover="troca(this)" onmouseout="destroca(this)">passe o mouse</p>
+    <br>
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>

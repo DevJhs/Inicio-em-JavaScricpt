@@ -9,81 +9,39 @@
 <body>
     <script>
 
-                     
+        
+       
+              
         do{
 
-            var senha=1234,ten=parseFloat(prompt("Sua senha: "))
-            
-            if(ten===senha){
-                   alert("compra ss");
-                  break
-                 }
-                    
-                if(ten!=senha){
-
-                    alert("tente novamente");
-                    const ten=parseFloat(prompt("Sua Senha: "));
-
-                };
-
-                var tente=0
-
-                if(tente===0){
-                    
-                    alert("bloqueado");
-                        break
-                    };                                                   
-
-                    tente-- 
-
-            }while(ten!=senha);
-
-        
-        
-        
-        </script>
-        
-        
-        
-                    
-        
-        
-        
-         <!-- 
-             
-            forma simple e um tanto complicada mas funciona tem jeitos melhores 
-            para fazer
-            
-            do{
-
             var senha=1234,ten=parseFloat(prompt())
-
             if(ten===senha){
-                console.log("compra ss");
-                break
-                }else{
+                   console.log("compra ss");
+                  break
 
-                    if(ten!=senha){
-                        console.log("tente novamente");
+                 }else{
 
-                        const ten=parseFloat(prompt())
+                     if(ten!=senha){
+                         console.log("tente novamente");
 
-                        if(ten!=senha){console.log("bloqueado");};
+                         const ten=parseFloat(prompt())
 
-                if(ten===senha){console.log("compra ss");
-                break
+                         if(ten!=senha){console.log("bloqueado");};
 
-                };
+                   if(ten===senha){console.log("compra ss");
+                  break
+
+                  };
+               };
             };
-            };
+            
+
+         }while(ten===senha);
 
 
-            }while(ten===senha); -->
 
 
-
-
-    
+    </script>
     
 </body>
 </html>

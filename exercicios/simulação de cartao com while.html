@@ -9,8 +9,9 @@
 <body>
   <script>
 
-        var senha=1234,tenta=2;
-        let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "));
+        var senha=1234;
+        let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "))
+        var tenta=2;
       
         if(tenSh===senha){
             alert("COMPRA APROVADA");
@@ -19,22 +20,21 @@
         while(tenSh!=senha){
 
              alert("VOCE TEM "+tenta-- +" TENTATIVAS");
-        let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "));
+            let  tenSh=parseFloat(prompt("DIGITE A SENHA DO SEU CARTÃO: "))
 
-            if(tenSh===senha){
-                alert("COMPRA APROVADA");               
+            if(tenta===0){
+                alert("CARTÃO BLOQUEADO");
                 break
 
-            }else if(tenta==0){ 
-                 alert("CARTÃO BLOQUEADO");
-                 break
+            }else if(tenSh!=senha){ 
+                alert("TENTE NOVAMENTE");
 
             }else{
-                alert("TENTE NOVAMENTE");
+                alert("COMPRA APROVADA");
+                 break
             }
 
         };
-        
 
   </script>   
 </body>

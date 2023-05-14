@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+<body>
+    <script>
+
+        var nt1=prompt("Insira a nota1: "),nt2=prompt("Insira a nota2: "), nt3=prompt("Insira a nota3: "),nt4=prompt("Insira a nota4: ");
+
+        var mediaFinal = (parseFloat(nt1)+parseFloat(nt2)+parseFloat(nt3)+parseFloat(nt4))/4; 
+        
+        console.log("TOTAL NOTAS: "+ mediaFinal);
+
+        if(mediaFinal>=7){
+               console.log("Aprovado");
+
+        }
+        else if(mediaFinal>=5){
+            console.log("Recuperção");
+        }
+        else{
+            console.log("Reprovado");
+        };
+        
+        /*
+        if (mediaFinal < 5){
+            console.log("Reprovado")
+        } else if (mediaFinal < 7){
+            console.log("recuperação")
+        } else {
+            console.log("aprovado");
+        }*/
+        
+         
+
+    </script>
+    
+</body>
+</html>

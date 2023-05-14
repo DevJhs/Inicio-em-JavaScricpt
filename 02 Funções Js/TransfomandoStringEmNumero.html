@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de String Para Número </title>
+</head>
+<body>
+    <script>
+ 
+     /*
+       rodara obrigatoriamente valor do tipo strng para valores numericos.
+         parseInt(a) numeros inteiro
+        parserFloat(c) numeros quebrados
+
+        Math.round()valores arrendodandos
+        Math.random() valores aleatorios    
+     */ 
+
+
+        var a="6.6";
+        var b="3.8";
+        var c= parseInt(a) + parseInt(b);
+
+        /* Math */
+        var ale1=Math.random()*10;
+        var ale2=Math.round()*10;
+
+        var ale3=Math.round(Math.random()*10);
+
+        /*NaN nao funcionara por gerar um numero arrd*/
+        var ale4=Math.random(Math.round()*10);
+
+       
+
+        console.log(a);
+        console.log(b);
+        console.log(parseFloat(c));
+        console.log("Math");
+        console.log(ale1);
+        console.log(ale2);
+        console.log(ale3);
+        console.log(ale4);
+        
+
+
+    </script>
+</body>
+</html>

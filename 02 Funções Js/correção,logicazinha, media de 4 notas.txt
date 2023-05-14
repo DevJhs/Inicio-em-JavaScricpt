@@ -1,0 +1,2 @@
+correção,logicazinha, media de 4 notas
+faz parte da aula de condições(IF)

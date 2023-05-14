@@ -1,0 +1,2 @@
+Do, for, while
+faz parte do laço de repetição

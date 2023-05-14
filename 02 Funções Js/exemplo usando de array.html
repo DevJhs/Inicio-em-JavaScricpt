@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Array</title>
+</head>
+<body>
+    <script>
+       //Exemplo 1
+
+       var alunos=new Array("igor","jose","marcos","mariana");
+
+       // para imprimir todos os valores podemos utilizar
+         // console.log(alunos);
+          // para imprimir valores especificos utilizamos
+         // console.log(alunos[3]);
+
+
+      //Exemplo 2
+    /*    
+          var alunos2=['Bruno','Isac','Leticia','Betina'];
+          //para mostra o tamanho da Array
+          console.log(alunos2.length);
+          console.log(alunos2);
+
+           var aluno1="bruno",alunos2="beatriz",aluno3="lizandra";
+
+           console.log(aluno1);
+           console.log(aluno2);
+           console.log(aluno3);            
+    */
+
+        for(var i in alunos){
+           //imprimirar asa indices da Array  
+            console.log(i);
+            //imprimira od valores que estao 
+            //dentro da Array de acordo com o seu conteudo;
+            console.log(alunos[i]);
+        }
+
+        //var aluno of alunos adicina os (elementos)
+        // de alunos dentro de aluno;
+        for(var aluno of alunos){
+            console.log(aluno);
+
+        }
+
+
+        
+
+    </script>
+    
+</body>
+</html>
